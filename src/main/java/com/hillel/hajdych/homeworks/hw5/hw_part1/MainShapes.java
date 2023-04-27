@@ -17,8 +17,8 @@ public class MainShapes {
             System.out.println("Площа: " + shape.toString() + " = " +  shape.areaOf());
         }
 
-
-
+        System.out.println();
+        System.out.print("Сума площ геометричних фігур: ");
         System.out.println(sumArea(shapes));
     }
 
@@ -27,7 +27,6 @@ public class MainShapes {
         for (Shapes shape: shapes) {
             sum += shape.areaOf();
         }
-        System.out.print("Сума площ геометричних фігур: ");
         return sum;
     }
 }
