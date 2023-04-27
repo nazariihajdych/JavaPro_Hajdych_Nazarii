@@ -21,7 +21,8 @@ public class Dog extends Animals {
             if (barrierLength <= dogRunMax) {
                 System.out.println(dogName + " пробіг " + barrierLength + " м.");
             } else {
-                System.out.println(dogName + " не зміг пройти перешкоду, довжина перешкоди в " + barrierLength + " м. занадто велика!");
+                System.out.println(dogName + " не зміг пройти перешкоду, довжина перешкоди в "
+                        + barrierLength + " м. занадто велика!");
             }
         }
     }
@@ -34,7 +35,8 @@ public class Dog extends Animals {
             if (barrierLength <= dogSwimMax) {
                 System.out.println(dogName + " проплив " + barrierLength + "м.");
             } else {
-                System.out.println(dogName + " не зміг проплисти перешкоду, довжина перешкоди " + barrierLength + "м. занадто велика!");
+                System.out.println(dogName + " не зміг проплисти перешкоду, довжина перешкоди в "
+                        + barrierLength + " м. занадто велика!");
             }
         }
     }

@@ -19,7 +19,8 @@ public class Cat extends Animals {
             if (barrierLength <= catRunMax) {
                 System.out.println(catName + " пробіг " + barrierLength + " м.");
             } else {
-                System.out.println(catName + " не зміг пройти перешкоду, довжина перешкоди в " + barrierLength + " м. занадто велика!");
+                System.out.println(catName + " не зміг пройти перешкоду, довжина перешкоди в "
+                        + barrierLength + " м. занадто велика!");
             }
         }
 

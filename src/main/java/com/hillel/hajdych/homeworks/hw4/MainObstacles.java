@@ -3,13 +3,13 @@ package com.hillel.hajdych.homeworks.hw4;
 public class MainObstacles {
     public static void main(String[] args) {
 
-        Animals catSansa = new Cat("Murkit");
-        Animals dogBoris = new Dog("Boris");
-        Cat catLasun = new Cat("Lasun");
-        Dog dogOskar = new Dog("Oskar");
+        Animals catMurkit = new Cat("Муркіт");
+        Animals dogBoris = new Dog("Борис");
+        Cat catLasun = new Cat("Ласун");
+        Dog dogOskar = new Dog("Оскар");
 
-        catSansa.run(123);
-        catSansa.swim(12);
+        catMurkit.run(123);
+        catMurkit.swim(12);
         dogBoris.run(1099);
         dogBoris.swim(10);
         catLasun.run(234);
@@ -19,10 +19,6 @@ public class MainObstacles {
 
         System.out.println("Всього створено тварин: " + Animals.getAnimalCounter());
         System.out.println("Створено котів - " + Cat.getCatCounter() + " , собак - " + Dog.getDogCounter());
-
-
-
-
 
     }
 }
