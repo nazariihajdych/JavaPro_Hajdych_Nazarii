@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ad2a551-1705-4d0f-b309-64282bccf72d" name="Changes" comment="add class employee">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hm1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hm1/car/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hm1/samename1/SameName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hm1/samename2/SameName.java" afterDir="false" />
+    <list default="true" id="7ad2a551-1705-4d0f-b309-64282bccf72d" name="Changes" comment="homework #2 / OOP">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw4/Animals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw4/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw4/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw4/MainObstacles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part1/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part1/MainShapes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part1/Shapes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part1/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part1/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/MainCompetition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Obstacles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Track.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Wall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Participant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/lassons/ls3/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hm1/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hm1/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +33,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,13 +69,52 @@
       <recent name="com.hillel.hajdych.homeworks.hm1.somename" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainCompetition">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hillel.hajdych.homeworks.hm1.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.hillel.hajdych.homeworks.hm2.Main" />
       <module name="JavaPro_Hajdych" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hillel.hajdych.homeworks.hm1.samename2.*" />
+          <option name="PATTERN" value="com.hillel.hajdych.homeworks.hm2.samename2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainCompetition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hillel.hajdych.homeworks.hw5.hw_part2.MainCompetition" />
+      <module name="JavaPro_Hajdych" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hillel.hajdych.homeworks.hw5.hw_part2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainObstacles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hillel.hajdych.homeworks.hw4.MainObstacles" />
+      <module name="JavaPro_Hajdych" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hillel.hajdych.homeworks.hw4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainShapes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hillel.hajdych.homeworks.hm5.hm_part1.MainShapes" />
+      <module name="JavaPro_Hajdych" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hillel.hajdych.homeworks.hm5.hm_part1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,6 +124,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainCompetition" />
+        <item itemvalue="Application.MainShapes" />
+        <item itemvalue="Application.MainObstacles" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -106,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681934575526</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="homework #2 / OOP">
+      <created>1681943250248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681943250248</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +198,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="add ignore .idea" />
     <MESSAGE value="add class employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class employee" />
+    <MESSAGE value="homework #2 / OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework #2 / OOP" />
   </component>
 </project>
