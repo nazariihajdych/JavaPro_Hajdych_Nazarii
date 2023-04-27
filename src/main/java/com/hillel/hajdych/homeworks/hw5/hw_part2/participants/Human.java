@@ -8,15 +8,9 @@ public class Human extends Participant {
         super(name, runMax, jumpMax);
     }
 
-//    @Override
-//    public void run() {
-//        System.out.println(name + " біжить!");
-//    }
-//
-//    @Override
-//    public void jump() {
-//        System.out.println(name + " стрибає!");
-//    }
-
+    @Override
+    public String toString() {
+        return "Human";
+    }
 
 }

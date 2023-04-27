@@ -11,30 +11,24 @@ import com.hillel.hajdych.homeworks.hw5.hw_part2.participants.Robot;
 public class MainCompetition {
     public static void main(String[] args) {
 
-        Obstacles obstacles1 = new Wall(113);
-        Obstacles obstacles2 = new Track(1122);
-        Participant participant1 = new Human("valera", 123, 11);
 
         Participant[] allParticipants = {
-                new Human("Valera", 123, 11),
-                new Cat("Meyou", 123, 123),
-                new Robot("Bender", 22,234)
+                new Human("Валєрій", 100, 3),
+                new Cat("Ласун", 125, 15),
+                new Robot("Бендер", 502,245)
         };
 
         Obstacles[] allObstacles = {
-                new Wall(12),
-                new Track(233),
-                new Wall(32),
-                new Track(123)
+                new Wall(4, "Стіна"),
+                new Track(220, "Бігова доріжка"),
+                new Wall(15, "Паркан"),
+                new Track(235, "Стадіон")
         };
 
         for (int i = 0; i < allParticipants.length; i++) {
             for (int j = 0; j < allObstacles.length; j++) {
                 allParticipants[i].overcome(allObstacles[j]);
             }
-
         }
-
-        System.out.println(allParticipants[0].overcome(allObstacles[0]));
     }
 }
