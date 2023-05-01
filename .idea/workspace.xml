@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ad2a551-1705-4d0f-b309-64282bccf72d" name="Changes" comment="homework #5/2">
+    <list default="true" id="7ad2a551-1705-4d0f-b309-64282bccf72d" name="Changes" comment="homework #5/2 last changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw6/HomeWorkApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw4/MainObstacles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw4/MainObstacles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part1/MainShapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part1/MainShapes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/MainCompetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/MainCompetition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Obstacles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Obstacles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/obstacles/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Participant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hillel/hajdych/homeworks/hw5/hw_part2/participants/Robot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +52,13 @@
       <recent name="com.hillel.hajdych.homeworks.hm1.somename" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainObstacles">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hillel.hajdych.homeworks.hm2.Main" />
+  <component name="RunManager" selected="Application.HomeWorkApp">
+    <configuration name="HomeWorkApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hillel.hajdych.homeworks.hw6.HomeWorkApp" />
       <module name="JavaPro_Hajdych" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hillel.hajdych.homeworks.hm2.samename2.*" />
+          <option name="PATTERN" value="com.hillel.hajdych.homeworks.hw6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HomeWorkApp" />
         <item itemvalue="Application.MainObstacles" />
         <item itemvalue="Application.com.hillel.hajdych.homeworks.hw5.hw_part1.MainShapes" />
         <item itemvalue="Application.MainCompetition" />
         <item itemvalue="Application.MainShapes" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +186,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682593853580</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="homework #4 last changes">
+      <created>1682607476469</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682607476469</updated>
+    </task>
+    <task id="LOCAL-00009" summary="homework #5/1 last changes">
+      <created>1682607502303</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682607502303</updated>
+    </task>
+    <task id="LOCAL-00010" summary="homework #5/2 last changes">
+      <created>1682607519520</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682607519520</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +241,9 @@
     <MESSAGE value="homework #4" />
     <MESSAGE value="homework #5/1" />
     <MESSAGE value="homework #5/2" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework #5/2" />
+    <MESSAGE value="homework #4 last changes" />
+    <MESSAGE value="homework #5/1 last changes" />
+    <MESSAGE value="homework #5/2 last changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework #5/2 last changes" />
   </component>
 </project>
