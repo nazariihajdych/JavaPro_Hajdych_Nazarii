@@ -19,7 +19,7 @@ public class FileLoggerConfigurationLoader extends LoggerConfigurationLoader {
 
         String file = "";
         LoggingLevel level = null;
-        int maxSize =0;
+        int maxSize = 0;
         String format = "";
 
         String[] splitLine;

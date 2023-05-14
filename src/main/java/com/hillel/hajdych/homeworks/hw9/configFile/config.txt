@@ -1,4 +1,4 @@
-FILE: /Users/nazar/IdeaProjects/JavaPro_Hajdych/src/main/java/com/hillel/hajdych/homeworks/hw9/logFile/logFile.txt
+FILE: /Users/nazar/IdeaProjects/JavaPro_Hajdych/src/main/java/com/hillel/hajdych/homeworks/hw9/logFile/log_15.05.2023-02:42:25.txt
 LEVEL: DEBUG
-MAX-SIZE: 1000
+MAX-SIZE: 1200
 FORMAT: [%s][%s] Повідомлення - [%s]

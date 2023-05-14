@@ -4,17 +4,17 @@ import com.hillel.hajdych.homeworks.hw9.FileMaxSizeReachedException.FileMaxSizeR
 import com.hillel.hajdych.homeworks.hw9.LoggerConfiguration;
 import com.hillel.hajdych.homeworks.hw9.LoggingLevel;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Date;
 
 public class FileLogger extends MyLogger{
-    public FileLogger(LoggerConfiguration config) {
+
+    private String configPath;
+    public FileLogger(LoggerConfiguration config, String configPath) {
         super(config);
+        this.configPath = configPath;
     }
 
     @Override
@@ -35,33 +35,25 @@ public class FileLogger extends MyLogger{
     }
 
     private void writeToLogFile(String logMessage) throws FileMaxSizeReachedException {
-        File loggerFolder = new File("/Users/nazar/IdeaProjects/JavaPro_Hajdych/src/main/java/com/hillel/hajdych/homeworks/hw9/logFile");
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy-HH:mm:ss");
 
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy-HH:mm:ss");
 
         File logFile = new File(config.getFilePath());
 
-
         if (logFile.length() + logMessage.length() >= config.getMaxFileSize()) {
-            logFile = new File(loggerFolder.getPath() + "/log_" + dateFormat.format(new Date()) + ".txt");
-            // logFile.createNewFile();
+            logFile = new File(logFile.getParent() + "/log_" + dateFormat.format(new Date()) + ".txt");
 
-            try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("/Users/nazar/IdeaProjects/JavaPro_Hajdych/src/main/java/com/hillel/hajdych/homeworks/hw9/configFile/config.txt"))){
-                bufferedWriter.write("FILE: " + logFile.getPath());
-                bufferedWriter.newLine();
-                bufferedWriter.write("LEVEL: " + config.getLevel());
-                bufferedWriter.newLine();
-                bufferedWriter.write("MAX-SIZE: " + config.getMaxFileSize());
-                bufferedWriter.newLine();
-                bufferedWriter.write("FORMAT: " + config.getFormat());
+            try (RandomAccessFile randomAccessFile = new RandomAccessFile(configPath, "rw")){
+                randomAccessFile.seek(6);
+                randomAccessFile.write(logFile.getPath().getBytes());
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
 
-//        if (config.getFilePath().length() + logMessage.length() > config.getMaxFileSize()){
-//            throw new FileMaxSizeReachedException(config.getMaxFileSize(), (int) logFile.length(), config.getFilePath());
-//        }
+        if (config.getFilePath().length() > config.getMaxFileSize()){
+            throw new FileMaxSizeReachedException(config.getMaxFileSize(), (int) logFile.length(), config.getFilePath());
+        }
 
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(config.getFilePath(), true))){
             bufferedWriter.write(logMessage);
@@ -73,9 +65,4 @@ public class FileLogger extends MyLogger{
 
     }
 
-    private void createNewLogFile(File logFile){
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy-HH:mm");
-        //new File(logFile.getParent() + File.separator + "Log_" + dateFormat.format(new Date()) + ".txt");
-        config.setFilePath(logFile.getParent() + File.separator + "Log_" + dateFormat.format(new Date()) + ".txt");
-    }
 }
