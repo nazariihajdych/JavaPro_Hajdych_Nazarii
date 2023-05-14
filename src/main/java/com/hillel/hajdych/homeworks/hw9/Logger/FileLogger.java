@@ -35,17 +35,35 @@ public class FileLogger extends MyLogger{
     }
 
     private void writeToLogFile(String logMessage) throws FileMaxSizeReachedException {
+        File loggerFolder = new File("/Users/nazar/IdeaProjects/JavaPro_Hajdych/src/main/java/com/hillel/hajdych/homeworks/hw9/logFile");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy-HH:mm:ss");
+
+
         File logFile = new File(config.getFilePath());
 
-        if (new File(config.getFilePath()).length() + logMessage.length() > config.getMaxFileSize()){
-            throw new FileMaxSizeReachedException(config.getMaxFileSize(), (int) logFile.length(), config.getFilePath());
-        }
 
         if (logFile.length() + logMessage.length() >= config.getMaxFileSize()) {
-            createNewLogFile(logFile);
+            logFile = new File(loggerFolder.getPath() + "/log_" + dateFormat.format(new Date()) + ".txt");
+            // logFile.createNewFile();
+
+            try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("/Users/nazar/IdeaProjects/JavaPro_Hajdych/src/main/java/com/hillel/hajdych/homeworks/hw9/configFile/config.txt"))){
+                bufferedWriter.write("FILE: " + logFile.getPath());
+                bufferedWriter.newLine();
+                bufferedWriter.write("LEVEL: " + config.getLevel());
+                bufferedWriter.newLine();
+                bufferedWriter.write("MAX-SIZE: " + config.getMaxFileSize());
+                bufferedWriter.newLine();
+                bufferedWriter.write("FORMAT: " + config.getFormat());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
 
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(logFile, true))){
+//        if (config.getFilePath().length() + logMessage.length() > config.getMaxFileSize()){
+//            throw new FileMaxSizeReachedException(config.getMaxFileSize(), (int) logFile.length(), config.getFilePath());
+//        }
+
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(config.getFilePath(), true))){
             bufferedWriter.write(logMessage);
             bufferedWriter.newLine();
 
