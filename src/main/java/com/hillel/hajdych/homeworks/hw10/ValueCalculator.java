@@ -10,10 +10,9 @@ public class ValueCalculator {
     private double[] numArrayHalfOne = new double[halfOfArraySize];
     private double[] numArrayHalfTwo = new double[halfOfArraySize];
 
-    private long startTime;
 
     public void arrayDivider(){
-        startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
 
         Arrays.fill(numbers, 1);
         System.arraycopy(numbers, 0, numArrayHalfOne, 0, halfOfArraySize);
