@@ -11,57 +11,63 @@ public class Main {
     public static void main(String[] args) {
 
         Random random = new Random();
-        List<String> strList = new ArrayList<>();
-        String name = new String("nazar");
 
-        strList.add("nazar");
-        strList.add("volodya");
-        strList.add("henry");
-        strList.add("nazar");
-        strList.add("nazar");
-        strList.add("Nazar");
-        strList.add("volodya");
-        strList.add("volodya");
-        strList.add("sdfsd");
-        strList.add("sdfdsf");
+        String[] sample = new String[]{"nazar", "volodya", "henry", "sansa", "oksana"};
+        int howMuchWords = 20;
+        List<String> testStrList = new ArrayList<>();
+
+        for (int i = 0; i < howMuchWords; i++) {
+            testStrList.add(sample[random.nextInt(0,sample.length)]);
+        }
+
+        System.out.println("Тестовий список: " + testStrList);
+        System.out.println("Завдання №1 - countOccurrence");
+        String word = "nazar";
+        System.out.println("Слово \"" + word + "\" в списку " + countOccurrence(testStrList, word) + " екз;");
+        System.out.println("-----------------------");
 
 
-        Double[] array = new Double[12];
-        Arrays.fill(array, 12.4);
+        System.out.println("Завдання №2 - toList");
+        Integer[] array = new Integer[12];
+        Arrays.fill(array, 27);
+        System.out.println("Масив перетворений в список: " + toList(array));
+        System.out.println("-----------------------");
 
-        List<Double> doubles = new ArrayList<>();
-
-        System.out.println(toList(array));
-
-        System.out.println(strList);
-
-        System.out.println(countOccurrence(strList, name));
-
-        List<Integer> test = new ArrayList<>();
+        System.out.println("Завдання №3 - findUnique");
+        List<Integer> testInt = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            test.add(random.nextInt(1, 11));
+            testInt.add(random.nextInt(1, 11));
         }
-        System.out.println(test);
-        System.out.println(findUnique(test));
-        calcOccurrence(strList);
-        List<Occurrence> newOcuran = new ArrayList<>(findOccurrence(strList));
-        for (Occurrence ocur: newOcuran) {
-            System.out.println(ocur.toString());
+        System.out.println("Оригінальний список: " + testInt);
+        System.out.println("Унікальні значення: " + findUnique(testInt));
+        System.out.println("-----------------------");
+
+        System.out.println("Завдання №4** - calcOccurrence");
+        calcOccurrence(testStrList);
+        System.out.println("-----------------------");
+
+        System.out.println("Завдання №4*** - findOccurrence");
+        List<Occurrence> newOccurrList = new ArrayList<>(findOccurrence(testStrList));
+        for (Occurrence o: newOccurrList) {
+            System.out.println(o.toString());
         }
+        System.out.println("-----------------------");
+
+        System.out.println("Завдання №5 - PhoneBook");
 
         PhoneBook phoneBook = new PhoneBook();
-        phoneBook.add("nazar", "1");
-        phoneBook.add("vasil", "2");
-        phoneBook.add("volodia", "3");
-        phoneBook.add("nastya", "4");
-        phoneBook.add("nazar", "5");
-        phoneBook.add("nazar", "6");
-        phoneBook.add("nazar", "7");
-        PhoneBook phoneBook2 = new PhoneBook();
+        phoneBook.add("nazar", "0680992348");
+        phoneBook.add("vasil", "0982343445");
+        phoneBook.add("volodymyr", "0963455637");
+        phoneBook.add("nastya", "0773456778");
+        phoneBook.add("Nazar", "0983456738");
+        phoneBook.add("oleksii", "0673457878");
+        phoneBook.add("vasil", "0995673467");
 
-        System.out.println(phoneBook.find("vasil"));
-        System.out.println(phoneBook.findAll("nazar"));
+        System.out.println(phoneBook.find("nazar"));
+        System.out.println(phoneBook.findAll("vasil"));
         System.out.println(phoneBook.findAll("oleksii"));
+        System.out.println("-----------------------");
     }
 
     public static int countOccurrence(List<String> listStr, String str) {
@@ -72,7 +78,8 @@ public class Main {
         return counter;
     }
 
-    public static <G> List<?> toList(G[] array) {
+    //тільки для масивів референсних типів даних
+    public static <T> List<T> toList(T[] array) {
         return new ArrayList<>(Arrays.asList(array));
     }
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PhoneBook {
 
-    private List<Record> phoneBookList = new ArrayList<>();
+    private final List<Record> phoneBookList = new ArrayList<>();
 
     public void add(String name, String phone){
         phoneBookList.add(new Record(name, phone));
@@ -13,24 +13,21 @@ public class PhoneBook {
 
     public Record find(String name){
         for (Record rec: phoneBookList) {
-            if (rec.getName().equals(name)) return rec;
+            if (rec.getName().equalsIgnoreCase(name)) return rec;
         }
         return null;
     }
 
     public List<Record> findAll(String name){
         List<Record> recordsSameName = new ArrayList<>();
-        if (!phoneBookList.isEmpty()) {
+
             for (Record rec : phoneBookList) {
-                if (rec.getName().equals(name)) recordsSameName.add(rec);
+                if (rec.getName().equalsIgnoreCase(name)) recordsSameName.add(rec);
             }
             if (recordsSameName.isEmpty()){
                 return null;
             }else {
                 return recordsSameName;
             }
-        }else {
-            return null;
-        }
     }
 }
