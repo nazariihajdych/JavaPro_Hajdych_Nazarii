@@ -30,7 +30,7 @@ public class CoffeeOrderBoard {
     }
 
     public void draw(){
-        System.out.println("================");
+        System.out.println("========================");
         for (Order order : orderQueue) {
             System.out.println(order.getNumberOfOrder() + " | " + order.getOrderLabel() + " | " + order.getCostumerName());
         }
