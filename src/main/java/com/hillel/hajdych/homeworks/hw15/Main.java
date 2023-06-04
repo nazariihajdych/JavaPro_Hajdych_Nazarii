@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println();
         System.out.println("Вихідний масив #2: " + Arrays.toString(array2));
-        SortAlgorithms.shackSort(array2);
+        SortAlgorithms.shakeSort(array2);
         System.out.println("Відсортований масив (шейкерний алгоритм): " + Arrays.toString(array2));
 
     }

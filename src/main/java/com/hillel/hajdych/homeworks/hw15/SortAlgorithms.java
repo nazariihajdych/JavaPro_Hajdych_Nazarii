@@ -29,7 +29,7 @@ public class SortAlgorithms {
         return i;
     }
 
-    public static void shackSort(int[] array) {
+    public static void shakeSort(int[] array) {
         int left = 0;
         int right = array.length - 1;
 
