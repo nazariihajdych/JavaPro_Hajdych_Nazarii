@@ -26,12 +26,12 @@ public class BinaryTree implements Iterable<Integer> {
 
 
     @Override
-    public Iterator iterator() {
+    public Iterator<Integer> iterator() {
         return new DepthFirstIterator();
     }
 
     private class DepthFirstIterator implements Iterator<Integer> {
-        private Stack<TreeNode> stack = new Stack<>();
+        private final Stack<TreeNode> stack = new Stack<>();
 
         public DepthFirstIterator() {
             this.stack.push(root);
