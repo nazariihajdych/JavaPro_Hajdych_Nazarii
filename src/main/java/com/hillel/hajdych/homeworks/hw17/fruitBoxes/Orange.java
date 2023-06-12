@@ -6,6 +6,10 @@ public class Orange extends Fruit{
         weight = 1.5F;
     }
 
+    public Orange(float fruitWeight) {
+        weight = fruitWeight;
+    }
+
     @Override
     public String toString() {
         return "Orange {" +

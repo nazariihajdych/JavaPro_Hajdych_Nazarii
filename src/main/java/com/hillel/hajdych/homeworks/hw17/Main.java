@@ -5,6 +5,7 @@ import com.hillel.hajdych.homeworks.hw17.fruitBoxes.Box;
 import com.hillel.hajdych.homeworks.hw17.fruitBoxes.Orange;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Main {
         Box<Apple> appleBox = new Box<>();
         Box<Orange> orangeBox = new Box<>();
 
-        Apple apple1 = new Apple();
+        Apple apple1 = new Apple(1.7F);
         Apple apple2 = new Apple();
 
         Apple[] fewApples = new Apple[]{

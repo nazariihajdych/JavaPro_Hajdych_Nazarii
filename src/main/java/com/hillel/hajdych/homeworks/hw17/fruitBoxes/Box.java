@@ -20,8 +20,8 @@ public class Box <T extends Fruit> {
         fruitsBox.addAll(ToListUtils.toList(fruit));
     }
 
-    public double getWeight(){
-        double boxWeight = 0;
+    public float getWeight(){
+        float boxWeight = 0;
 
         for (Fruit fruit: fruitsBox) {
             boxWeight += fruit.weight;
