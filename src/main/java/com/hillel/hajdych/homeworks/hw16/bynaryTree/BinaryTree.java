@@ -1,4 +1,4 @@
-package com.hillel.hajdych.homeworks.hw16;
+package com.hillel.hajdych.homeworks.hw16.bynaryTree;
 
 import java.util.Iterator;
 import java.util.Stack;
@@ -6,18 +6,18 @@ import java.util.Stack;
 public class BinaryTree implements Iterable<Integer> {
     private TreeNode root;
 
-    public void insert(int value){
+    public void insert(int value) {
         root = insert(root, value);
     }
 
-    public TreeNode insert(TreeNode root, int value){
-        if (root == null){
+    public TreeNode insert(TreeNode root, int value) {
+        if (root == null) {
             return new TreeNode(value);
         }
 
-        if (value < root.getValue()){
+        if (value < root.getValue()) {
             root.setLeft(insert(root.getLeft(), value));
-        }else {
+        } else {
             root.setRight(insert(root.getRight(), value));
         }
 
@@ -46,11 +46,11 @@ public class BinaryTree implements Iterable<Integer> {
         public Integer next() {
             TreeNode top = stack.pop();
 
-            if (top.getRight() != null){
+            if (top.getRight() != null) {
                 stack.push(top.getRight());
             }
 
-            if (top.getLeft() != null){
+            if (top.getLeft() != null) {
                 stack.push(top.getLeft());
             }
 

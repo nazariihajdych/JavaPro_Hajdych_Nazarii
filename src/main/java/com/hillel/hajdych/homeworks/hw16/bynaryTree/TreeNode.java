@@ -1,7 +1,4 @@
-package com.hillel.hajdych.homeworks.hw16;
-
-import java.util.Iterator;
-import java.util.Stack;
+package com.hillel.hajdych.homeworks.hw16.bynaryTree;
 
 public class TreeNode {
     private final int value;

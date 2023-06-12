@@ -1,5 +1,7 @@
 package com.hillel.hajdych.homeworks.hw16;
 
+import com.hillel.hajdych.homeworks.hw16.bynaryTree.BinaryTree;
+
 public class Main {
     public static void main(String[] args) {
         BinaryTree binaryThree = new BinaryTree();
@@ -12,9 +14,8 @@ public class Main {
         binaryThree.insert(7);
         binaryThree.insert(8);
 
-        for (Integer i: binaryThree) {
-            System.out.println(" " + i);
+        for (Integer i : binaryThree) {
+            System.out.print(" " + i);
         }
-
     }
 }
