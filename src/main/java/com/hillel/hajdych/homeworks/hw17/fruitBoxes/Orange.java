@@ -1,6 +1,6 @@
 package com.hillel.hajdych.homeworks.hw17.fruitBoxes;
 
-public class Orange extends Fruit{
+public class Orange extends Fruit {
 
     public Orange() {
         weight = 1.5F;

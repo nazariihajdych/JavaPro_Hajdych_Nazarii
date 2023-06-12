@@ -10,8 +10,6 @@ public class Apple extends Fruit {
         weight = fruitWeight;
     }
 
-
-
     @Override
     public String toString() {
         return "Apple {" +
