@@ -5,11 +5,11 @@ import java.time.LocalDateTime;
 public class Product {
 
     private static int nextIdNum = 1;
-    private int identifierNumber;
-    private String type;
+    private final int identifierNumber;
+    private final String type;
     private float price;
     private boolean discountability;
-    private LocalDateTime createDate;
+    private final LocalDateTime createDate;
 
     public Product(String type, float price) {
         this.identifierNumber = nextIdNum;
