@@ -11,7 +11,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class TestRunner {
-    public static void start(Class<?> testClass){
+    public static void start(Class<?> testClass) {
         try {
             Object testObject = testClass.getConstructor().newInstance();
 
@@ -20,16 +20,16 @@ public class TestRunner {
             List<Method> afterSuiteMethods = new ArrayList<>();
             List<Method> testMethods = new ArrayList<>();
 
-            for (Method method: declaredMethods) {
-                if (method.isAnnotationPresent(BeforeSuite.class)){
-                    if (!beforeSuiteMethods.isEmpty()){
+            for (Method method : declaredMethods) {
+                if (method.isAnnotationPresent(BeforeSuite.class)) {
+                    if (!beforeSuiteMethods.isEmpty()) {
                         throw new RuntimeException("Знайдено більше одного @BeforeSuit анотованих методів!");
                     }
                     beforeSuiteMethods.add(method);
                 } else if (method.isAnnotationPresent(Test.class)) {
                     testMethods.add(method);
                 } else if (method.isAnnotationPresent(AfterSuite.class)) {
-                    if (!afterSuiteMethods.isEmpty()){
+                    if (!afterSuiteMethods.isEmpty()) {
                         throw new RuntimeException("Знайдено більше одного @AfterSuit анотованих методів!");
                     }
                     afterSuiteMethods.add(method);
@@ -51,7 +51,8 @@ public class TestRunner {
             if (!afterSuiteMethods.isEmpty()) {
                 afterSuiteMethods.get(0).invoke(testObject);
             }
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+        } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
+                 NoSuchMethodException e) {
             throw new RuntimeException(e);
         }
     }

@@ -1,6 +1,5 @@
 package com.hillel.hajdych.homeworks.hw19;
 
-import com.hillel.hajdych.homeworks.hw19.Calculator.Calculator;
 import com.hillel.hajdych.homeworks.hw19.Calculator.CalculatorTest;
 
 public class Main {
